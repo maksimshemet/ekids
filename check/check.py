@@ -3,9 +3,7 @@ from random import random, randint
 import string
 import math
 
-
-
-
+print("Все верно!")
 
 
 
