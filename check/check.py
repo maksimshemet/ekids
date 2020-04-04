@@ -38,35 +38,18 @@ def test(ex, *args):
     
     if ex == '3.1':
         
-        if('python' not in args[0]):
-            print("Ксожалению в твоем предложении нет слова python =((((")
-            return Image(url='https://media.giphy.com/media/9Y5BbDSkSTiY8/giphy.gif', width=500, height=500)
-        else:
+      
+        if ( (args[0] > 900) and (args[1] == 12) ) or ( (args[0] < 50) and (args[1] == 1) ) or ( (args[0] >= 55) and (args[1] == 15) ):
             print("Все верно!")
             print("Хорошая работа=)")
             return Image(url='https://media.giphy.com/media/cQQd1c5xFas4U/giphy.gif', width=500, height=500)
         
-    if ex == '3.2':
-        print(f"Debug: Твоя переменная выглядит так ===>{args[0]}<===")
-        if("funny" in args[0]):
-            if (len(args[0]) != 5):
-                print("В твоей переменной не только слово funny, попробуй снова.")
-                return Image(url='https://media.giphy.com/media/3o6Zt3NI3hLqP6m0YE/giphy.gif', width=500, height=500)
-            else:
-                print("Все верно!")
-                return Image(url='https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif', width=250, height=250)
         else:
-            print("Проверь Debug: и откоректируй индексы")
+            print("Неверно  =((((")
             return Image(url='https://media.giphy.com/media/9Y5BbDSkSTiY8/giphy.gif', width=500, height=500)
-        
-    if ex == '3.3':
-        
-        if (args[0] and args[1] == False):
-            print("Все верно!")
-            print("Хорошая работа=)")
-            return Image(url='https://media.giphy.com/media/dpnfPvaCIHBrW/giphy.gif', width=500, height=500)
-        else:
             
-            print("Перечитай задание=) и попробуй снова.")
-            return Image(url='https://www.irishtimes.com/polopoly_fs/1.2809144.1475080968!/image/image.jpg_gen/derivatives/box_620_330/image.jpg'\
-                         ,width=250,height=250)
+            
+            
+            
+            
+        
